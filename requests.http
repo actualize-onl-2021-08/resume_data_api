@@ -46,3 +46,6 @@ Content-Type: application/json
   "photo": "photo_url",
   "password": "password"
 }
+
+### Student Destroy
+DELETE http://localhost:3000/students/1

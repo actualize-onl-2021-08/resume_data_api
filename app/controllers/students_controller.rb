@@ -44,4 +44,10 @@ class StudentsController < ApplicationController
     student.save
     render json: student.as_json
   end
+
+  def destroy 
+    student = Student.find_by(id: params[:id])
+    student.destroy
+    render json: {message: "Student successfully destroyed."}
+  end 
 end
