@@ -1,6 +1,7 @@
 class EducationsController < ApplicationController
   def index
     educations = Education.all
-    render json: {message: "hello"}
+    render json: educations.as_json
+
   end
 end
