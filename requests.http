@@ -21,3 +21,16 @@ Content-Type: application/json
 
 ### education show
 GET http://localhost:3000/educations/1
+
+### education update
+PATCH http://localhost:3000/educations/1
+Content-Type: application/json
+
+{
+  "start_date": 20050505,
+  "end_date": 30050607,
+  "degree": "test-degree-udpate",
+  "university_name": "test-university_name-update",
+  "details": "test-details-update",
+  "student_id": 3
+}
