@@ -2,3 +2,6 @@ GET http://localhost:3000/experiences
 ###
 
 POST http://localhost:3000/experiences
+
+### educations index
+GET http://localhost:3000/educations
