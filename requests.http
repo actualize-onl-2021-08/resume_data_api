@@ -11,12 +11,12 @@ POST http://localhost:3000/educations
 Content-Type: application/json
 
 {
-  "start_date": 20000101,
-  "end_date": 30000101,
+  "start_date": 20040101,
+  "end_date": 30030101,
   "degree": "test-degree",
   "university_name": "test-university_name",
   "details": "test-details",
-  "student_id": 2
+  "student_id": 1
 }
 
 ### education show
@@ -34,3 +34,6 @@ Content-Type: application/json
   "details": "test-details-update",
   "student_id": 3
 }
+
+### education destroy
+DELETE http://localhost:3000/educations/4
