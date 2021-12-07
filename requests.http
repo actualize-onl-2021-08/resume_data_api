@@ -18,3 +18,6 @@ Content-Type: application/json
   "details": "test-details",
   "student_id": 2
 }
+
+### education show
+GET http://localhost:3000/educations/1

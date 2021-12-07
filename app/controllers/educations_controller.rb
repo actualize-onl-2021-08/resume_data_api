@@ -18,6 +18,10 @@ class EducationsController < ApplicationController
     else
       render json: { errors: education.errors.full_messages }, status: :bad_request
     end
-    # render json: {message: "hello"}
+  end
+  
+  def show
+    education = Education.find_by(id: params[:id])
+    render json: education.as_json
   end
 end
