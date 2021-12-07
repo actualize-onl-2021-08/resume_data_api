@@ -3,5 +3,6 @@ Rails.application.routes.draw do
   get "/experiences" => "experiences#index"
   post "/experiences" => "experiences#create"
   get "/educations" => "educations#index"
+  post "/educations" => "educations#create"
 end
 

@@ -5,3 +5,16 @@ POST http://localhost:3000/experiences
 
 ### educations index
 GET http://localhost:3000/educations
+
+### education create
+POST http://localhost:3000/educations
+Content-Type: application/json
+
+{
+  "start_date": 20000101,
+  "end_date": 30000101,
+  "degree": "test-degree",
+  "university_name": "test-university_name",
+  "details": "test-details",
+  "student_id": 2
+}
