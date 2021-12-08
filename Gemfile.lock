@@ -130,6 +130,8 @@ GEM
     seed_dump (3.3.1)
       activerecord (>= 4)
       activesupport (>= 4)
+    sinatra (1.0)
+      rack (>= 1.0)
     sprockets (4.0.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
@@ -157,6 +159,7 @@ DEPENDENCIES
   puma (~> 5.0)
   rails (~> 6.1.4, >= 6.1.4.1)
   seed_dump
+  sinatra (= 1.0)
   tzinfo-data
 
 RUBY VERSION

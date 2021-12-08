@@ -42,3 +42,5 @@ gem 'faker'
 
 #seed-dump
 gem 'seed_dump'
+
+gem 'sinatra', '1.0'
