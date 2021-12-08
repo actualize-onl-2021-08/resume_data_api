@@ -3,80 +3,84 @@ GET http://localhost:3000/experiences
 ###
 
 POST http://localhost:3000/experiences
+
+### educations index
+GET http://localhost:3000/educations
+
+### education create
+POST http://localhost:3000/educations
 Content-Type: application/json
 
 {
-  "start_date": 20210419,
-  "end_date": 20221113,
-  "job_title": "AutoCAD Designer",
-  "company_name": "B&L Consulting",
-  "details": "Generated construction packages",
+  "start_date": 20040101,
+  "end_date": 30030101,
+  "degree": "test-degree",
+  "university_name": "test-university_name",
+  "details": "test-details",
   "student_id": 1
 }
 
-###
-GET http://localhost:3000/experiences/1
-###
-PATCH http://localhost:3000/experiences/1
+### education show
+GET http://localhost:3000/educations/1
+
+### education update
+PATCH http://localhost:3000/educations/1
 Content-Type: application/json
 
 {
-  "company_name": "B&L&T Consulting"
+  "start_date": 20050505,
+  "end_date": 30050607,
+  "degree": "test-degree-udpate",
+  "university_name": "test-university_name-update",
+  "details": "test-details-update",
+  "student_id": 3
 }
 
-###
-DELETE http://localhost:3000/experiences/4
+### education destroy
+DELETE http://localhost:3000/educations/4
+### Student Index
+GET http://localhost:3000/students
 
-### SKILLS REQUESTS
-GET http://localhost:3000/skills
-###
-
-POST http://localhost:3000/skills
+### Student Create
+POST http://localhost:3000/students
 Content-Type: application/json
 
 {
-  "skill_name": "Making coffee",
-  "student_id": 1
+  "first_name": "Britney", 
+  "last_name": "Foor",
+  "email": "britney@gmail.com", 
+  "phone_number": "123-456-1234",
+  "bio": "bio",
+  "linkedin_url": "linkedin_url",
+  "twitter_handle": "twitter_handle",
+  "website_url": "website_url",
+  "resume_url": "resume_url",
+  "github_url": "github_url",
+  "photo": "photo_url",
+  "password": "password"
 }
 
-###
-GET http://localhost:3000/skills/1
-###
-PATCH http://localhost:3000/skills/3
+### Student Show 
+GET http://localhost:3000/students/1
+
+### Student Update
+PATCH http://localhost:3000/students/1 
 Content-Type: application/json
 
 {
-  "skill_name": "Making tea"
+  "first_name": "Britney", 
+  "last_name": "Foor",
+  "email": "britney@gmail.com", 
+  "phone_number": "123-456-1234",
+  "bio": "New Bio",
+  "linkedin_url": "linkedin_url",
+  "twitter_handle": "twitter_handle",
+  "website_url": "website_url",
+  "resume_url": "resume_url",
+  "github_url": "github_url",
+  "photo": "photo_url",
+  "password": "password"
 }
 
-###
-DELETE http://localhost:3000/skills/4
-
-### CAPSTONES REQUESTS
-
-GET http://localhost:3000/capstones
-###
-
-POST http://localhost:3000/capstones
-Content-Type: application/json
-
-{
-  "name": "Making coffee",
-  "description": "Coffe App",
-  "url": "url",
-  "screenshot": "screenshot",
-  "student_id": 1
-}
-
-###
-GET http://localhost:3000/capstones/1
-###
-PATCH http://localhost:3000/capstones/3
-Content-Type: application/json
-
-{
-  "name": "tea app"
-}
-
-###
-DELETE http://localhost:3000/capstones/4
+### Student Destroy
+DELETE http://localhost:3000/students/1
